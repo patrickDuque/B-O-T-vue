@@ -2,8 +2,7 @@
   <v-app-bar
     app
     color="white"
-    class="pa-0"
-    extended
+    class="px-0"
     elevate-on-scroll
   >
     <div

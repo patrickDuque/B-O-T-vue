@@ -7,7 +7,7 @@
       <v-col
         xs="12"
         md="6"
-        class="pa-0"
+        class="pa-0 hidden-sm-and-down"
       >
         <v-card
           id="card"
@@ -21,14 +21,15 @@
             outlined
           >
             <v-container
-              class="fill-height"
+              class="fill-height pa-0"
               fluid
             >
               <v-row
+                class="hidden-sm-and-down"
                 align="center"
                 justify="center"
               >
-                <div class="box">
+                <div class="box pa-0">
                   <h1 class="display-1 red--text text--darken-4 pa-5 font-italic font-weight-bold">NEW ERA BEGINS</h1>
                   <router-link to="/shop">
                     <p class="title font-weight-light font red--text text--darken-4 text-center">
@@ -56,12 +57,10 @@
         md="6"
         class="pa-0"
       >
-        <v-container
-          fluid
-          class="pa-0"
-        >
-          <v-img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></v-img>
-        </v-container>
+        <v-img
+          eager
+          src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        ></v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -93,5 +92,10 @@
 
   #card {
     border: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 </style>

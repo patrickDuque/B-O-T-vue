@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <v-container fluid>
     <HomeHeader />
     <div class="spacer" />
     <HomeBody />
     <div class="spacer" />
     <HomeFooter />
-  </div>
+  </v-container>
 </template>
 
 <script>

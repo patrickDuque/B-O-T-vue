@@ -9,22 +9,21 @@
         md="6"
         class="pa-0"
       >
-        <v-container
-          fluid
-          class="pa-0"
-        >
-          <v-img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></v-img>
-        </v-container>
+        <v-img
+          eager
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        ></v-img>
       </v-col>
       <v-col
         xs="12"
         md="6"
-        class="pa-0"
+        class="pa-0 hidden-sm-and-down"
       >
         <v-card
           id="card"
           outlined
           height="100%"
+          width="100%"
           class="pa-0 ma-0"
         >
           <v-card
@@ -33,14 +32,15 @@
             outlined
           >
             <v-container
-              class="fill-height ma-0"
+              class="fill-height ma-0 pa-0"
               fluid
             >
               <v-row
+                class="hidden-sm-and-down"
                 align="center"
                 justify="center"
               >
-                <div class="box">
+                <div class="box pa-0">
                   <h1 class="display-1 blue-grey--text text--darken-3 pa-5 font-italic font-weight-bold">NEVER STOP RUNNING</h1>
                   <router-link to="/shop">
                     <p class="title font-weight-light blue-grey--text text--darken-3 text-center">

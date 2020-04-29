@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <Header />
+  <v-app class="pa-0">
+    <Header class="pa-0" />
     <v-content>
       <transition
         name="fade"
