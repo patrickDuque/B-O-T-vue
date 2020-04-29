@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.104cd5503d8766731a84d1015e866558.js"
+  "/precache-manifest.07e4bbe1cd688141cbd35d0875705a7f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "boots-of-travel"});

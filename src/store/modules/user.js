@@ -49,7 +49,9 @@ const actions = {
 	tryAutoLogin : ({ commit, dispatch }) => {
 		const _id = localStorage.getItem('userId');
 		const name = localStorage.getItem('name');
-		commit('authUser', { _id, name });
+		if (_id && name) {
+			commit('authUser', { _id, name });
+		}
 		dispatch('autoLogout');
 	},
 	autoLogout   : ({ commit }) => {
