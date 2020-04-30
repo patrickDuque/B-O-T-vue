@@ -32,27 +32,27 @@
       />
       <Link
         v-if="checkAuth"
-        destination="/shop/mens-shoes"
+        destination="/shop/men's-shoes"
         label="SHOES"
       />
       <Link
         v-if="checkAuth"
-        destination="/shop/mens-shirts"
+        destination="/shop/men's-shirts"
         label="CLOTHING"
       />
       <Link
         v-if="checkAuth"
-        destination="/shop/mens-caps"
+        destination="/shop/men's-caps"
         label="CAPS"
       />
       <Link
         v-if="checkAuth"
-        destination="/shop/mens-accessories"
+        destination="/shop/men's-accessories"
         label="ACCESSORIES"
       />
       <Link
         v-if="checkAuth"
-        destination="/shop/mens-bags"
+        destination="/shop/men's-bags"
         label="BAGS"
       />
       <router-link
@@ -70,12 +70,12 @@
       <Link
         v-if="!checkAuth"
         destination="/signin"
-        label="SIGN IN"
+        label="LOG IN"
       />
       <Link
         v-if="!checkAuth"
         destination="/signup"
-        label="SIGN UP"
+        label="REGISTER"
       />
 
       <p
@@ -103,31 +103,31 @@
         </v-list-item>
         <v-list-item v-if="checkAuth">
           <Link
-            destination="/shop/mens-shoes"
+            destination="/shop/men's-shoes"
             label="SHOES"
           />
         </v-list-item>
         <v-list-item v-if="checkAuth">
           <Link
-            destination="/shop/mens-shirts"
+            destination="/shop/men's-shirts"
             label="CLOTHING"
           />
         </v-list-item>
         <v-list-item v-if="checkAuth">
           <Link
-            destination="/shop/mens-caps"
+            destination="/shop/men's-caps"
             label="CAPS"
           />
         </v-list-item>
         <v-list-item v-if="checkAuth">
           <Link
-            destination="/shop/mens-accessories"
+            destination="/shop/men's-accessories"
             label="ACCESSORIES"
           />
         </v-list-item>
         <v-list-item v-if="checkAuth">
           <Link
-            destination="/shop/mens-bags"
+            destination="/shop/men's-bags"
             label="BAGS"
           />
         </v-list-item>
@@ -147,13 +147,13 @@
         <v-list-item v-if="!checkAuth">
           <Link
             destination="/signin"
-            label="SIGN IN"
+            label="LOG IN"
           />
         </v-list-item>
         <v-list-item v-if="!checkAuth">
           <Link
             destination="/signup"
-            label="SIGN UP"
+            label="REGISTER"
           />
         </v-list-item>
         <v-list-item v-if="checkAuth">

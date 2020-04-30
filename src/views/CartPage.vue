@@ -18,6 +18,16 @@
       >
         Continue to checkout
       </v-btn>
+      <v-container>
+        <PayPal
+          v-if="subTotal > 0"
+          :amount="subTotal"
+          currency="PHP"
+          :client="credentials"
+          env="sandbox"
+        >
+        </PayPal>
+      </v-container>
     </v-container>
     <v-dialog
       v-model="dialog"
@@ -98,6 +108,7 @@
   import { StripeElements } from "vue-stripe-checkout";
   import CartItem from "@/components/Cart/CartItem.vue";
   import axios from "axios";
+  import PayPal from "vue-paypal-checkout";
 
   export default {
     data: () => ({
@@ -110,11 +121,17 @@
       email: "",
       address: "",
       description: "",
-      disable: true
+      disable: true,
+      credentials: {
+        sandbox:
+          "AZfAs4MTbgLf3LA9y1TwfGEx9R76iJxKuL0XjO0UgCRncQ97DmVi17RdC-q4g0udURg00X7V8hKYITaK",
+        production: "EMJZXLG3WP7XC"
+      }
     }),
     components: {
       CartItem,
-      StripeElements
+      StripeElements,
+      PayPal
     },
     computed: {
       myCart() {
@@ -148,10 +165,12 @@
       },
       sendTokenToServer(charge) {
         const id = this.$store.getters["user/getId"];
-        axios.post(`https://loud-giddy-firewall.glitch.me/checkout/${id}`, charge).then(() => {
-          this.$store.dispatch("cart/initCart", id);
-          this.$router.push("/orders");
-        });
+        axios
+          .post(`https://loud-giddy-firewall.glitch.me/checkout/${id}`, charge)
+          .then(() => {
+            this.$store.dispatch("cart/initCart", id);
+            this.$router.push("/orders");
+          });
       },
       rules(email) {
         // eslint-disable-next-line no-useless-escape

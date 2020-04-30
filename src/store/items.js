@@ -1,6 +1,6 @@
 export default [
 	{
-		name  : 'mens-shoes',
+		name  : "men's-shoes",
 		items : [
 			{
 				id       : 20,
@@ -40,7 +40,7 @@ export default [
 		]
 	},
 	{
-		name  : 'mens-shirts',
+		name  : "men's-shirts",
 		items : [
 			{
 				id       : 10,
@@ -80,7 +80,7 @@ export default [
 		]
 	},
 	{
-		name  : 'mens-caps',
+		name  : "men's-caps",
 		items : [
 			{
 				id       : 30,
@@ -120,7 +120,7 @@ export default [
 		]
 	},
 	{
-		name  : 'mens-accessories',
+		name  : "men's-accessories",
 		items : [
 			{
 				id       : 40,
@@ -160,7 +160,7 @@ export default [
 		]
 	},
 	{
-		name  : 'mens-bags',
+		name  : "men's-bags",
 		items : [
 			{
 				id       : 50,
